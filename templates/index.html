@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handler</title>
+</head>
+
+<body>
+    {%if user.is_authenticated %}
+    <h1>This is home page.</h1>
+    <h3>Only allowed to visit by the logged users.</h3>
+    <hr>
+    <br><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia modi, vero dolores alias laudantium
+        dignissimos nesciunt. Numquam labore, fuga officiis eveniet fugiat quos voluptatibus rerum? Hic, omnis. Aliquam
+        soluta quasi vel culpa exercitationem laudantium praesentium repellat, suscipit possimus dicta sapiente sint id
+        repudiandae, non voluptates excepturi eaque ad? Laboriosam illo amet eaque accusantium pariatur voluptatibus
+        quibusdam ducimus nobis commodi est, modi voluptatum non. Totam consequatur illum recusandae sequi. Consequuntur
+        veritatis eaque qui sit placeat iure pariatur ipsa dicta accusantium adipisci, sequi exercitationem officia ex,
+        laboriosam nemo ipsum commodi, velit dignissimos voluptatum repudiandae optio perspiciatis atque. Magnam earum
+        nam ad?</p>
+    {%else%}
+    <h4>There is nothis here for non logged users.</h4>
+    <a href="login/">Login Here.</a>
+    {%endif%}
+</body>
+
+</html>
